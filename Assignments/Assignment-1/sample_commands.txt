@@ -1,0 +1,24 @@
+(1)
+a) echo hello world
+Outputs 'hello world' on the screen as a line of text 
+b) echo {con,pre}{sent,fer}{s,ed}
+Outputs 'consents consented confers confered presents presented prefers prefered' on the screen as a line of text. The commands followed by echo
+is similar to the distrivutive properties of foil and follows a specific pattern to output a word. However in this case, the function string is 
+used along with three aruguments each containing two terms. Starting from the first argument to the third, the first term then the last term is
+used in an argument by merging them on each of the consecutive terms in the following arguments. 
+c) date
+Displays the current date, time and time zone in a given format
+d) whoami
+Displays the username of the active user ID
+e) cal 2000
+Displays the calendar for the year 2000, containing each day, week, and month. 
+f) cal 9 1752
+Displays the calendar for the ninth month of the year, September in the year 1752. The first argument is for the month which is followed by the
+second argument being for the year. It outputs the monthly calendar with the days as columns except in this case for one specified month and year. 
+The unusual part is that this command prints only one month for the argument 9 being the ninth month, September.   
+g) bc -l
+This command is known as a calculator language that works along with arbitrary precision numbers while actively interacting
+with statements to execute. The second command -l, is a long list format.
+h) echo 5+4 | bc -1
+The command "echo" is used to print out a text line, but since there are more commands following that rather than just printing out "5+4", the 
+following commands execute the sum when 5+4 are added together mathematically. 
