@@ -11,3 +11,9 @@
 #for the file to execute.After, I manually edited this file, this allowed
 #me to open the file.This process allowed the program to capture and execute 
 #the data by displaying all the points on the map when plotted.
+
+#In order to find the radius of the disk was created,
+#by first calculating the size of the outbreaks. This was done by dividing 
+#the case, then multiplying it by 30. Then, if I encountered a situation
+#where the value was too low to plot, I would simply add 5. This is the
+#process I used to choose the radius.
