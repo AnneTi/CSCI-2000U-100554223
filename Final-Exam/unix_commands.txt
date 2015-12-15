@@ -1,0 +1,52 @@
+
+# part (a)
+# How would you print the file classlist.csv to the screen
+# except the two header lines?
+# Enter the relevant Unix command(s) used below.
+
+#First, I would use the word count command (wc -l) to count the 
+#number of lines in the classlist.csv file, then I would construct
+#a pipeline to be able to read all the content in thta file except
+#the two head lines.
+
+
+# part (b)
+# How would you construct a pipeline using the command from part (a)
+# to determine how many distinct students are in this list?
+# Enter the relevant Unix command(s) used below as well as the number
+# of students in the list.
+
+#From using the word count command (wc -l classlist.csv), I found out that there are
+#132 lines, but if the first two head lines are disregarded, there are
+#a total of 130 lines .Thus, to construct a pipeline that reads just the
+#132 distinct students in this list, my solution is:
+
+head -130 classlist.csv | tail -2
+
+
+
+# part (c)
+# How would you sort the list by the second column (i.e., by
+# "First Name")? Which student (provide first and last name) would be
+# at the top of the list? Which student would be at the bottom of the
+# list?
+# Enter the relevant Unix command(s) used below as well as the names
+# of the first and last students in the new list.
+
+sort -k2 classlist.csv
+
+
+# part (d)
+# Construct a Unix pipeline involving these functions to determine
+# how many students have the same first name. Which first names are
+# repeated in the class list?
+# Enter the relevant name(s) and the Unix command(s) below.
+
+
+
+
+# part (f) [BONUS]
+# Construct a Unix pipeline that extracts the last three digits of
+# the student number and the first character of the first name to make
+# a four-character identifier for each student.
+# Enter the relevant Unix command(s) used below.
